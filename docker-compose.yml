@@ -4,7 +4,7 @@ services:
   zigbee2mqtt:
     image: koenkk/zigbee2mqtt
     volumes:
-      - ./volumes/data:/app/data
+      - ./configuration.yaml:/app/data/configuration.yaml
     devices:
       - /dev/ttyACM0:/dev/ttyACM0
     restart: always
